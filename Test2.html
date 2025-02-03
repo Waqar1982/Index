@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Bla opp og ned</h3>
+
+
+    <div style="display:flex; align-items: center;" id="headPart">
+
+    </div>
+    <div style="display: flex;align-items: center;" id="bodyPart">
+
+    </div>
+
+    <div style="display: flex;align-items: center;" id="legsPart">
+
+    </div>
+
+
+
+
+
+    </div>
+
+
+
+    <script>
+        selecthead1();
+        selectBody1();
+        selectLegs1();
+
+
+
+        function selecthead1() {
+            document.getElementById('headPart').innerHTML =/*HTML*/`
+<button onclick="selecthead4()">
+    ◀
+</button>
+<div>
+    <img src="img/head1.png"/>
+    </div>
+    <button onclick="selecthead2()">
+        ▶
+        </div>
+`;
+        }
+        function selecthead2() {
+            document.getElementById('headPart').innerHTML =/*HTML*/`
+<button onclick="selecthead1()">
+    ◀
+</button>
+<div>
+    <img src="img/head2.png"/>
+    </div>
+    <button onclick="selecthead3()">
+        ▶
+        </div>
+`;
+        }
+        function selecthead3() {
+            document.getElementById('headPart').innerHTML =/*HTML*/`
+<button onclick="selecthead2()">
+    ◀
+</button>
+<div style=>
+    <img src="img/head3.png"/>
+    </div>
+    <button onclick="selecthead4()">
+        ▶
+        </div>
+`;
+        }
+        function selecthead4() {
+            document.getElementById('headPart').innerHTML =/*HTML*/`
+<button onclick="selecthead3()">
+    ◀
+</button>
+<div style=>
+    <img src="img/head4.png"/>
+    </div>
+    <button onclick="selecthead1()">
+        ▶
+        </div>
+`;
+        }
+
+
+
+
+
+
+
+        function selectBody1() {
+            document.getElementById('bodyPart').innerHTML =/*HTML*/`
+<button onclick="selectBody4()">
+    ◀
+</button>
+<div>
+    <img src="img/body1.png"/>
+    </div>
+    <button onclick="selectBody2()">
+        ▶
+        </div>
+`;
+        }
+
+        function selectBody2() {
+            document.getElementById('bodyPart').innerHTML =/*HTML*/`
+<button onclick="selectBody1()">
+    ◀
+</button>
+<div>
+    <img src="img/body2.png"/>
+    </div>
+    <button onclick="selectBody3()">
+        ▶
+        </div>
+`;
+        }
+        function selectBody3() {
+            document.getElementById('bodyPart').innerHTML =/*HTML*/`
+<button onclick="selectBody2()">
+    ◀
+</button>
+<div style=>
+    <img src="img/body3.png"/>
+    </div>
+    <button onclick="selectBody4()">
+        ▶
+        </div>
+`;
+        }
+        function selectBody4() {
+            document.getElementById('bodyPart').innerHTML =/*HTML*/`
+<button onclick="selectBody3()">
+    ◀
+</button>
+<div style=>
+    <img src="img/body4.png"/>
+    </div>
+    <button onclick="selectBody1()">
+        ▶
+        </div>
+`;
+        }
+
+        function selectLegs1() {
+            document.getElementById('legsPart').innerHTML =/*HTML*/`
+<button onclick="selectLegs4()">
+    ◀
+</button>
+<div style=>
+    <img src="img/legs1.png"/>
+    </div>
+    <button onclick="selectLegs2()">
+        ▶
+        </div>
+`; }
+        
+
+function selectLegs2() {
+            document.getElementById('legsPart').innerHTML =/*HTML*/`
+<button onclick="selectLegs1()">
+    ◀
+</button>
+<div style=>
+    <img src="img/legs2.png"/>
+    </div>
+    <button onclick="selectLegs3()">
+        ▶
+        </div>
+`; }
+
+function selectLegs3() {
+            document.getElementById('legsPart').innerHTML =/*HTML*/`
+<button onclick="selectLegs2()">
+    ◀
+</button>
+<div style=>
+    <img src="img/legs3.png"/>
+    </div>
+    <button onclick="selectLegs4()">
+        ▶
+        </div>
+`; }
+
+function selectLegs4() {
+            document.getElementById('legsPart').innerHTML =/*HTML*/`
+<button onclick="selectLegs3()">
+    ◀
+</button>
+<div style=>
+    <img src="img/legs4.png"/>
+    </div>
+    <button onclick="selectLegs1()">
+        ▶
+        </div>
+`; }
+   
+
+
+    </script>
+
+</body>
+
+</html>
