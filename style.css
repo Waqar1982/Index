@@ -58,7 +58,7 @@ flex-direction: column;
   }
 
   .hidden{
-    /* display: hidden; */
-    background-color: aqua;
+    display: none;
+   
   }
   

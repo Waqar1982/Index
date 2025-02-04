@@ -169,7 +169,7 @@ function selectLegs4() {
 
 function removelayout(){
     console.log("kjøre removeLayout")
-    document.getElementById('cards').classList.remove('girdLayout');
+    document.getElementById('cards').classList.remove('gridLayout');
     document.getElementById('cards').classList.remove('vertikal');
     document.getElementById('cards').classList.remove('horisontal');
 }
@@ -186,18 +186,18 @@ function gridLayout(){
 
 function vertikal(){
     
-    document.getElementById('cards').classList.remove('girdLayout');
+    document.getElementById('cards').classList.remove('gridLayout');
     document.getElementById('cards').classList.remove('horisontal');
     document.getElementById('cards').classList.add('vertikal');
     }
 
 function horisontal(){
     
-    document.getElementById('cards').classList.remove('girdLayout');
+    document.getElementById('cards').classList.remove('gridLayout');
     document.getElementById('cards').classList.remove('vertikal');
     document.getElementById('cards').classList.add('horisontal');
 }
-function open(element){
+function openCard(element){
 document.getElementById(element).classList.toggle('hidden')
 
 
